@@ -1,0 +1,76 @@
+html{
+    /* box-sizing: border-box; */
+    background-color: #100e1d;
+    width: 100% ;
+    height: 100%;
+}
+
+/* *,*::after,*::before{
+    box-sizing: inherit;
+} */
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+h1,h2,h3,h4,h5,p {
+    margin: 0;
+}
+#root{
+    width: 100%;
+    height: 100%;
+}
+.inicio{
+    /* coment */
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+/* BARRA LATERAL IZQUIERDA ****************************/
+.barra{
+    background-color: #1e213a;
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+}
+/* PANEL DERECHO    ***********************************/
+.panel{
+    width: 70%;
+    height: 100%;
+    display: inline-block; 
+    top: 0;
+    vertical-align: top;
+}
+/* PANEL CONTENEDOR 5 FICHAS DE PREDICION *************/
+.PanelPredicionTiempo{
+    margin: 8% auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 650px;
+    height: 20%;
+}
+
+/* TIEMPO DIA ********************/
+.targetaPredicion{
+    width: 100%;
+    height: 150px;
+    background-color: #1e213a;
+    margin: 10px;
+}
+.datosHoy{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 5% auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    max-width: 600px;
+}
+.panelDatos{
+    background-color: #1e213a;
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    
+}

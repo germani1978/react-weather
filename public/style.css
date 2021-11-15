@@ -1,76 +1,114 @@
-html{
-    /* box-sizing: border-box; */
-    background-color: #100e1d;
-    width: 100% ;
-    height: 100%;
+html {
+  /* box-sizing: border-box; */
+  background-color: #100e1d;
+  width: 100%;
+  height: 100%;
 }
 
 /* *,*::after,*::before{
     box-sizing: inherit;
 } */
-body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
-h1,h2,h3,h4,h5,p {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
 }
-#root{
-    width: 100%;
-    height: 100%;
+#root {
+  width: 100%;
+  height: 100%;
 }
-.inicio{
-    /* coment */
-    width: 100%;
-    height: 100%;
-    display: inline-block;
+.inicio {
+  /* coment */
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 45% 55%;
 }
-/* BARRA LATERAL IZQUIERDA ****************************/
-.barra{
-    background-color: #1e213a;
-    width: 30%;
-    height: 100%;
-    display: inline-block;
+/* BARRA LATERAL ****************************/
+.barraLateral {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background-color: #1e213a;
 }
-/* PANEL DERECHO    ***********************************/
-.panel{
-    width: 70%;
-    height: 100%;
-    display: inline-block; 
-    top: 0;
-    vertical-align: top;
+/*************** PANEL TIEMPO****************/
+.PanelPredicionTiempo {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 30px;
 }
-/* PANEL CONTENEDOR 5 FICHAS DE PREDICION *************/
-.PanelPredicionTiempo{
-    margin: 8% auto;
-    display: flex;
-    justify-content: space-between;
-    max-width: 650px;
-    height: 20%;
+.cont-dia {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%; 
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%;
 }
 
-/* TIEMPO DIA ********************/
-.targetaPredicion{
-    width: 100%;
-    height: 150px;
-    background-color: #1e213a;
-    margin: 10px;
+.targetaPredicion {
+  width: 18%;
+  height: 100%;
+  background-color: #1e213a;
 }
-.datosHoy{
-    width: 70%;
+
+/**************GRADOS ************************/
+.grados {
+  text-align: right;
+  margin-bottom: 5%;
+}
+.grados button {
+  border-radius: 50%;
+  width: 4vh;
+  height: 4vh;
+  border: none;
+  text-align: center;
+  margin: 5px;
+  font-weight: 600;
+  font-size: 2vh;
+}
+.grados button:last-child {
+  background-color: #1e213a;
+  color: white;
+}
+/* PANEL DATOS HOY *************/
+.datosHoy {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 30px;
+   
+}
+.cont-panel-datos{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin: 5% auto;
-    column-gap: 30px;
-    row-gap: 30px;
-    max-width: 600px;
+    grid-template-rows: repeat(2,1fr);
+    height: 80%;
+    width: 80%;
+    max-width: 80%;
+    gap: 20px;
+    margin: auto;
 }
 .panelDatos{
-    background-color: #1e213a;
     width: 100%;
-    height: 150px;
-    margin: 0 auto;
-    
+    height: 100%;
+    background-color: #1e213a;
 }
+.datosHoy h3{
+    color: white;
+    font-family: cursive;
+    margin-bottom: 1vh;
+    width: 80%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2vh;
+}
+

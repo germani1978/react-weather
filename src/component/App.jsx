@@ -1,12 +1,13 @@
 import react from "react";
 import BarraLateraInicio from "./BarraLateraInicio";
-import BarraLateraBusqueda from "./BarraLateraBusqueda";
-import Panel from "./Panel";
+import PanelPredicionTiempo from "./PanelPredicionTiempo";
+import DatosHoy from "./DatosHoy";
 
 function App() {
     return <div className="inicio">
         <BarraLateraInicio />
-        <Panel /> 
+        <PanelPredicionTiempo/>
+        <DatosHoy />
     </div>
 }
 

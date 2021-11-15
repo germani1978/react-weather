@@ -4,11 +4,13 @@ import PanelDatos from "./PanelDatos"
 // Padre Panel
 function DatosHoy() {
     return <div className='datosHoy'>
-        <PanelDatos />
-        <PanelDatos />
-        <PanelDatos />
-        <PanelDatos />
+        <h3>Today`s Hightlights</h3>
+        <div className="cont-panel-datos">
+            <PanelDatos />
+            <PanelDatos />
+            <PanelDatos />
+            <PanelDatos />
+        </div>
     </div>
 }
-
 export default DatosHoy
